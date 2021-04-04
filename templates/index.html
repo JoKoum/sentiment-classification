@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ανάλυση συνασθήματος κειμένου</title>
+        <meta charset="utf-8">
+        <meta name="viewport"  content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+            <h1>Είναι θετική ή αρνητική η κριτική σου;</h1>
+            <p>Βάλε την κριτική σου και πάτα υποβολή για να δεις:</p>
+            <form method="POST"
+                  action="{{ url_for('predict') }}">         
+                <div class="form-group">
+                    <label for="review">Κριτική:</label>
+                    <textarea class="form-control"  rows="5" id="review", name="review">Γράψε την κριτική εδώ</textarea>
+                </div>
+                <button type="submit" class="btn btn-default">Υποβολή</button>
+            </form>
+            <h1 class="bg-success" id="result">{{ prediction_text }}</h1>
+            <br>
+            <img src="images/sentiment_network_sparse_2.png" align="middle"/>
+        </div>
+    </body>
+</html>
