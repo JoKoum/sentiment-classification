@@ -14,7 +14,6 @@ print('\n')
 mlp.test(reviews[-22000:],labels[-22000:])
 print('\n')
 
-   
 url = 'https://www.skroutz.gr/s/23272388/Xiaomi-Redmi-Note-9-Pro-128GB-Tropical-Green.html#reviews'
 rselector= '#sku_reviews_list > li div.review-body'
 sselector = '#sku_reviews_list > li div.actual-rating > span'
@@ -42,9 +41,5 @@ def predict():
     else:
         return render_template('index.html', prediction_text = 'Το νευρωνικό δίκτυο κατηγοριοποίησε την κριτική ως αρνητική')
 
-
-
 if __name__ == '__main__':
     app.run()
-
-    
