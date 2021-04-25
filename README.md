@@ -1,6 +1,6 @@
 # MLP Sentiment classification
 
-The project investigates the performance of the Multi-layer Perceptron algorithm, demonstrated at the [Sentiment Analysis lesson](https://github.com/udacity/deep-learning-v2-pytorch/tree/master/sentiment-analysis-network) from Udacity Deep Learning Nanodegree, when trained with the data from the artificially translated in Greek dataset of the [Machine Learning project](https://github.com/JoKoum/Machine-Learning-Project).
+The project investigates the performance of the Multi-layer Perceptron algorithm, demonstrated at the [Sentiment Analysis lesson](https://github.com/udacity/deep-learning-v2-pytorch/tree/master/sentiment-analysis-network) from Udacity Deep Learning Nanodegree, when trained with the data from the artificially translated in Greek dataset of the [Machine Learning project](https://github.com/JoKoum/Machine-Learning-Project). Translated reviews are passed to the neural network represented in a simplified bag-of-words model.
 
 <img src="static/sentiment_network_sparse_2.png" align="middle"/>
 
